@@ -92,14 +92,20 @@
             text-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
         }
 
-        video {
+        .video-container {
+            position: relative;
             width: 100%;
+            height: 200px;
             border-radius: 10px;
-            display: block;
-            background: #000;
-            max-height: 240px;
-            object-fit: contain;
+            overflow: hidden;
             border: 1px solid rgba(0, 240, 255, 0.15);
+            background: #000;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
 
         .license-box {
@@ -164,10 +170,9 @@
         <h3>1. Мессенджер</h3>
         <p>Защищенная система обмена сообщениями с продвинутым интерфейсом.</p>
         <span class="price-tag">700 рублей</span>
-        <video controls preload="metadata">
-            <source src="https://drive.google.com/uc?export=download&id=1TgEUnetJxYnGoSosg32Wd8BLtruY14u5" type="video/mp4">
-            Ваш браузер не поддерживает видео.
-        </video>
+        <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/1TgEUnetJxYnGoSosg32Wd8BLtruY14u5/preview" allow="autoplay"></iframe>
+        </div>
     </div>
 
     <!-- Проект 2: Медиаплеер -->
@@ -175,10 +180,9 @@
         <h3>2. Медиаплеер</h3>
         <p>Современный мультимедийный проигрыватель для аудио и видео.</p>
         <span class="price-tag">400 рублей</span>
-        <video controls preload="metadata">
-            <source src="https://drive.google.com/uc?export=download&id=1og5dDrKMAnysJhsNRG-lXUqsKxu4Qz-f" type="video/mp4">
-            Ваш браузер не поддерживает видео.
-        </video>
+        <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/1og5dDrKMAnysJhsNRG-lXUqsKxu4Qz-f/preview" allow="autoplay"></iframe>
+        </div>
     </div>
 
     <!-- Проект 3: Лаунчер -->
@@ -186,10 +190,9 @@
         <h3>3. Лаунчер</h3>
         <p>Быстрый и технологичный лаунчер для запуска ваших приложений.</p>
         <span class="price-tag">190 рублей</span>
-        <video controls preload="metadata">
-            <source src="https://drive.google.com/uc?export=download&id=11yLZAckxuzKcquBLXbMBlB4KmwvOeUjY" type="video/mp4">
-            Ваш браузер не поддерживает видео.
-        </video>
+        <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/11yLZAckxuzKcquBLXbMBlB4KmwvOeUjY/preview" allow="autoplay"></iframe>
+        </div>
     </div>
 
     <div class="section-title">📜 Юридический блок</div>
